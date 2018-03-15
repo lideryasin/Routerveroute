@@ -1,0 +1,70 @@
+@import 'base';
+@import '~bootstrap/scss/bootstrap.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+
+$primary-color: #86BC42;
+$text-color:#49575F;
+$font-family: 'Lato', sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: $font-family !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header{
+  background-color: #fff;
+  box-shadow: 3px 0 8px rgba(0,0,0,3);
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-brand{
+  color: $primary-color !important;
+  font-family: $font-family;
+}
+  
+.nav-link{
+  color: $text-color !important;
+  font-family: $font-family;
+  text-transform: uppercase;
+}
+  
+.nav-link:hover{
+      color: $primary-color !important
+      
+  }
+.active{
+  font-weight: bold;
+  color: $primary-color !important;
+}
+
+.navbar-collapse{
+  flex-basis: 100%;
+  @media (min-width: 500px){
+    flex-basis: auto;
+  }
+  
+}
+
+a{
+  color: $primary-color;
+}
+a:hover{
+ color: $primary-color;
+}
